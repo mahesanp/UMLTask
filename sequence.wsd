@@ -1,0 +1,43 @@
+@startuml
+Title Online shopping system
+
+actor Customer #Blue
+== place order ==
+Customer-[#Purple]>Shoppingsite : Login to site
+Customer -[#Purple]> Shoppingsite : Search for products
+Customer -[#Purple]> Shoppingsite : Add to cart
+Customer -[#Purple]> Shoppingsite : Place order
+
+== payment details ==
+Customer-[#Blue]> payment : select payment option
+
+
+
+payment--[#red]>Bankserver : payment request
+note left #aqua
+Select payment option as:
+Net banking
+Debit/Credit card
+UPI payments
+end note
+
+Bankserver --[#Green]> payment : Request bank credentials
+
+Customer -[#Blue]> payment : Respond with credentials
+
+==Order confirmation ==
+payment --[#red]> Bankserver : validate credentials
+
+Bankserver --[#Green]> payment: Confirm payment
+payment -[#Green]> Shoppingsite : Payment successful
+
+Shoppingsite -[#Green]>Customer : Order confirmed
+
+
+
+
+
+
+
+
+@enduml
