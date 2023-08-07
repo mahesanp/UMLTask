@@ -1,0 +1,79 @@
+@startuml OnlineShoppingSystem
+Title  Online Shopping System
+skinparam backgroundcolor AntiqueWhite
+skinparam classBackgroundColor SeaGreen
+class CustomerLogin{
+  # username: string
+  # password: string
+  - email: string
+  - address: string
+  - phone: string
+  + updateProfile(): void
+  + placeOrder(): void
+  + addToCart(): void
+}
+class Product {
+  - productname: string
+  - description: string
+  - price: float
+  - stockQuantity: int
+  - discount: float
+  + updateStock(): void
+  + updatediscount(): void
+}
+class Order {
+  - refID: int
+  - products: List<Product>
+  - orderDate: date
+  - totalAmount: float
+  + calculateTotal(): float
+  + confirmOrder(): void
+}
+
+
+class Cart {
+  - quantity: int
+  - size: string
+  - customer: Customer
+  - cartItems: List<CartItem>
+  + addItem(): void
+  + removeItem(): void
+  + updateQuantity(): void
+}
+
+
+class Payment {
+  - paymentID: int
+  - cash on Delivery
+  - amount: float
+  - Method: string
+  + processPayment(): void
+}
+class Categories{
+    - DiscountBanners
+    - mobiles
+    - electronics & accesories
+    - Beauty
+    - Grocery 
+    - Fashion
+    - Home & Furniture
+    + clickcategory()
+
+}
+
+class Status{
+    -Packed : string
+    -Shipped : string
+    -Delivered: string
+    -Refund: string
+    +updateStatus(): string
+}
+CustomerLogin "1" -- "*" Order : can perform
+CustomerLogin "1" -- "1" Cart: contains
+CustomerLogin "1" -- "1" Categories
+Order  *-- Product 
+Order "1" -- "1" Payment : needs
+Order --* Status
+Cart "1" -- "*" Product : contains
+
+@enduml
