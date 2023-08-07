@@ -30,14 +30,17 @@ credentials and if the credentials were correct then the bank server approves th
 Class Diagram:
  
 The Online Shopping System has been depicted by the class diagram. For the case of Online Shopping System, the predominant classes to be considered are as follows:
-*Customer Login
-*Product
-*Order
-*Cart
-*Payment 
-*Categories
-*Status
-Each class has attributes and method. For instance let's consider the class Customer Login which has attributes like username, password, email, phone number, age group selection and has the previlege to place the order and contains methods like updateProfile() to update the foresaid details and plaeorder() function.
+-Customer Login
+-Product
+-Order
+-Cart
+-Payment 
+-Categories
+-Status
+Each class has attributes and method. For instance let's consider the class Customer Login which has attributes like
+username, password, email, phone number, age group selection and has the previlege to place the order and contains methods like 
+updateProfile() to update the foresaid details and plaeorder() function.
+
 The # symbol denotes as if the attribute or function is protected. The '-' and '+' denotes private and public respectively. The relationships among the classes can be association, aggregation, composition and inhertance. In the case of relationship, there comes the concept of multiplicity such as 
 1 to 1 or 1 to many.
 Each Customer Login has one category page, one cart and can perform multiple orders. Each order contains multiple products, must have a payment and can have a single delivery status. These classes and its relationships are depicted in the class diagram.
