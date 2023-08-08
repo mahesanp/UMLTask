@@ -1,0 +1,38 @@
+@startuml
+left to right direction
+
+skinparam usecase {
+    BackgroundColor lightblue
+    ArrowColor navy
+    ActorBorderColor red
+}
+package Actors {
+    actor Customer
+    actor Server
+    actor Database
+    actor Banker
+}
+
+package "Use Cases" {
+    usecase "Browse Products"
+    usecase "Add to cart"
+    usecase "Place Order"
+    usecase "Make Payment"
+    usecase "Responding to Client Requests"
+    usecase "Fetching data from Database"
+}
+skinparam actorStyle awesome
+Customer --> (Browse Products)
+Customer --> (Add to cart)
+Customer --> (Place Order)
+Customer --> (Make Payment)
+
+Server --> (Make Payment)
+Server --> (Responding to Client Requests)
+Server --> (Fetching data from Database)
+
+Database --> (Fetching data from Database)
+
+Banker --> (Make Payment)
+
+@enduml
