@@ -25,7 +25,7 @@ It is represented using arrows that has messages interacting with lifelines Here
 The customer chooses the payment method after adding the product to cart and the bank server validates the bank
 credentials and if the credentials were correct then the bank server approves the payment and the order is confirmed.
 
-![alt text](sequencediagram.png)
+![alt text](UMLTask/sequencediagram.PNG)
 
 ## Class Diagram:
  
