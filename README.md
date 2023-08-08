@@ -60,3 +60,5 @@ The Online Shopping System has been depicted by the use case diagram. In this ca
 
 Each actor is perfoming atleast one use case. The "make payment" use case is used by Customer, Banker and Server.
 The Card denotes the package of the Use Case Diagram. The packages present are "Actors" and "Use Cases".
+
+![use case diagram](https://github.com/mahesanp/UMLTask/blob/master/usecase.PNG)
