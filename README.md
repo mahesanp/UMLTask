@@ -46,4 +46,15 @@ The # symbol denotes as if the attribute or function is protected. The '-' and '
 Each Customer Login has one category page, one cart and can perform multiple orders. Each order contains multiple products, must have a payment and can have a single delivery status. These classes and its relationships are depicted in the class diagram.
 
 
+Use Case Diagram:
 
+The Online Shopping System has been depicted by the use case diagram. In this case the actors are Customer, Banker, Server, Database and the usecases are
+-usecase "Browse Products"
+-usecase "Add to cart"
+-usecase "Place Order"
+-usecase "Make Payment"
+-usecase "Responding to Client Requests"
+-usecase "Fetching data from Database"
+
+Each actor is perfoming atleast one use case. The "make payment" use case is used by Customer, Banker and Server.
+The Card denotes the package of the Use Case Diagram. The packages present are "Actors" and "Use Cases".
