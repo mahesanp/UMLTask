@@ -25,6 +25,8 @@ It is represented using arrows that has messages interacting with lifelines Here
 The customer chooses the payment method after adding the product to cart and the bank server validates the bank
 credentials and if the credentials were correct then the bank server approves the payment and the order is confirmed.
 
+![alt text](sequencediagram.png)
+
 ## Class Diagram:
  
 The Online Shopping System has been depicted by the class diagram. For the case of Online Shopping System, the predominant classes to be considered are as follows:
