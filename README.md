@@ -35,6 +35,7 @@ The Online Shopping System has been depicted by the class diagram. For the case 
 * Payment 
 * Categories
 * Status
+
 Each class has attributes and method. For instance let's consider the class Customer Login which has attributes like
 username, password, email, phone number, age group selection and has the previlege to place the order and contains methods like 
 updateProfile() to update the foresaid details and plaeorder() function.
