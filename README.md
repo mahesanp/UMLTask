@@ -46,6 +46,7 @@ The # symbol denotes as if the attribute or function is protected. The '-' and '
 1 to 1 or 1 to many.
 Each Customer Login has one category page, one cart and can perform multiple orders. Each order contains multiple products, must have a payment and can have a single delivery status. These classes and its relationships are depicted in the class diagram.
 
+![class diagram](https://github.com/mahesanp/UMLTask/blob/master/classdiagram.PNG)
 
 ## Use Case Diagram:
 
