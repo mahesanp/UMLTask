@@ -13,13 +13,13 @@ A sequential diagram in UML consists
 * Lifelines
 * Messages
 
-## Actor : 
+### Actor : 
         Here, Customer is a actor who interacts with the system and its objects for placing orders and making payment
 
-## Lifelines : 
+### Lifelines : 
         Lifeline depicts participant in a sequence diagram for internal interation, Here shopping website , Banking server acts as a lifeline.
 
-## Messages : 
+### Messages : 
 It is represented using arrows that has messages interacting with lifelines Here, Customer interacts with a lifeline Shoppingsite for searching and placing orders , and this message is represented with arrows.
 
 The customer chooses the payment method after adding the product to cart and the bank server validates the bank
